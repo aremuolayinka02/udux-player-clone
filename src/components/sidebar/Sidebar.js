@@ -41,7 +41,7 @@ const Container = styled.div`
     border: 3px solid #fbba12;
   }
 
-  @media screen and (${devices.mobile}) {
+  @media screen and (${devices.mobileS}) {
     display: none;
   }
 `;
