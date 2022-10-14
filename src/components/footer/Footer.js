@@ -22,6 +22,10 @@ const FooterWrapper = styled.div`
     bottom: 0;
     z-index: 10;
   }
+
+  @media screen and (${devices.desktop}) {
+    display: none;
+  }
 `;
 
 const MenuBox = styled.div`
