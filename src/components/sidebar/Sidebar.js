@@ -41,7 +41,7 @@ const Container = styled.div`
     border: 3px solid #fbba12;
   }
 
-  @media screen and (${devices.mobileS}) {
+  @media screen and (${devices.mobile}) {
     display: none;
   }
 `;
@@ -55,6 +55,10 @@ const SidebarWrapper = styled.div`
   align-items: flex-start;
   width: 285px;
   padding-bottom: 150px;
+
+  @media screen and (${devices.mobile}) {
+    display: none;
+  }
 `;
 
 const HorizontalLine = styled.hr`

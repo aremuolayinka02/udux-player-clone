@@ -14,11 +14,9 @@ export const theme = {
 
 //Media Queries - I am creating just two screen sizes because of the UI that was provided
 const sizes = {
+  mobileS: "750px",
   mobile: "999px",
   desktop: "1000px",
-
-  //This refers to smaller mobile screen
-  mobileS: "750px",
 };
 
 export const devices = {

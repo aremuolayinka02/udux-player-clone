@@ -35,7 +35,7 @@ export const Homepage = () => {
     <HomepageWrapper>
       <Container>
         <HomepageBanner />
-        <PlaylistGrid playlistHeader="Welcome Back!" />
+        <PlaylistGrid playlistHeader="Welcome Back!!" />
         <PlaylistGrid playlistHeader="Cheers to the Weekend " />
       </Container>
     </HomepageWrapper>
