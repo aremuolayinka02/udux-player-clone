@@ -12,7 +12,7 @@ import Library from "../../assets/icons/your_library.svg";
 import PlaylistIcon from "../../assets/icons/playlists_icon.svg";
 
 const FooterWrapper = styled.div`
-  @media screen and (${devices.mobile}) {
+  @media (${devices.mobile}) {
     display: block;
     height: 75px;
     width: 100%;
@@ -23,7 +23,7 @@ const FooterWrapper = styled.div`
     z-index: 10;
   }
 
-  @media screen and (${devices.desktop}) {
+  @media (${devices.desktop}) {
     display: none;
   }
 `;

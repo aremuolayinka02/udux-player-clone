@@ -43,7 +43,7 @@ const Container = styled.div`
     }
   }
 
-  @media only screen and (${devices.mobile}) {
+  @media (${devices.mobile}) {
     display: none;
   }
 `;
@@ -58,7 +58,7 @@ const SidebarWrapper = styled.div`
   width: 285px;
   padding-bottom: 150px;
 
-  @media only screen and (${devices.mobile}) {
+  @media (${devices.mobile}) {
     display: none;
   }
 `;
