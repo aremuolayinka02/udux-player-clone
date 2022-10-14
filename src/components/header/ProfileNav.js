@@ -5,6 +5,13 @@ import ProfilePicture from "../../assets/images/profile.png";
 //media query import
 import { devices } from "../../utils/theme";
 
+const ProfileImage = styled.img`
+  width: 52px;
+  height: 52px;
+  margin-right: 20px;
+  margin-left: 25px;
+`;
+
 const ProfileNavigator = styled.div`
   display: flex;
   align-items: center;
@@ -18,17 +25,14 @@ const ProfileNavigator = styled.div`
   }
 `;
 
-const ProfileImage = styled.img`
-  width: 52px;
-  height: 52px;
-  margin-right: 20px;
-  margin-left: 25px;
-`;
-
 const ProfileText = styled.p`
   font-family: ${(props) => props.theme.font.primary};
   color: ${(props) => props.theme.color.textColor};
   font-size: 1em;
+
+  @media screen and (${devices.mobile}) {
+    display: none;
+  }
 `;
 
 export const ProfileNav = () => {
