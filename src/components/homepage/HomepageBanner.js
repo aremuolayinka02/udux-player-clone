@@ -17,7 +17,7 @@ const BannerContainer = styled.div`
 const Banner = styled.img`
   width: 100%;
 
-  @media (${devices.mobileS}) {
+  @media screen and (${devices.mobileS}) {
     height: 8rem;
   }
 `;
@@ -28,7 +28,7 @@ const OmayLay = styled.img`
   bottom: 20px;
   width: 14em;
 
-  @media (${devices.mobileS}) {
+  @media screen and (${devices.mobileS}) {
     display: none;
   }
 `;
@@ -39,7 +39,7 @@ const Udux = styled.img`
   top: 20px;
   width: 5em;
 
-  @media (${devices.mobileS}) {
+  @media screen and (${devices.mobileS}) {
     display: none;
   }
 `;

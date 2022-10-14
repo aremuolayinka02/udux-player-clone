@@ -41,7 +41,7 @@ const Container = styled.div`
     border: 3px solid #fbba12;
   }
 
-  @media (${devices.mobile}) {
+  @media screen and (${devices.mobile}) {
     display: none;
   }
 `;
@@ -56,7 +56,7 @@ const SidebarWrapper = styled.div`
   width: 285px;
   padding-bottom: 150px;
 
-  @media (${devices.mobile}) {
+  @media screen and (${devices.mobile}) {
     display: none;
   }
 `;
