@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   height: 100%;
   background-color: transparent;
 
-  @media screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) {
     display: none;
   }
 `;
@@ -25,7 +25,7 @@ const DirectionArrows = styled.img`
   margin-left: 10px;
   cursor: pointer;
 
-  @media screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) {
     display: none;
   }
 `;
