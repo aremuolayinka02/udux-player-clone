@@ -15,20 +15,44 @@ import CreatePlaylist from "../../assets/icons/create_playlist_icon.svg";
 import PlaylistIcon from "../../assets/icons/playlists_icon.svg";
 import SearchIcon from "../../assets/icons/icon_search.svg";
 
-const Wrapper = styled.div`
+const Container = styled.div`
+  display: inline-block;
+  position: fixed;
+  margin-top: 87px;
+  max-height: 100%;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #fbba12 #fbba12;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: ${(props) => props.theme.color.background};
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #fbba12;
+    border-radius: 6px;
+    border: 3px solid #fbba12;
+  }
+`;
+
+const SidebarWrapper = styled.div`
   background-image: url(${BackgroundSVG});
-  background-color: #000000;
+  background-color: ${(props) => props.theme.color.background};
   padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 295px;
-  padding-bottom: 30px;
+  width: 285px;
+  padding-bottom: 150px;
 `;
 
 const HorizontalLine = styled.hr`
   border: 0.1px solid #282828;
-  width: 230px;
+  width: 220px;
 `;
 
 export const Sidebar = () => {
@@ -79,46 +103,48 @@ export const Sidebar = () => {
   ];
 
   return (
-    <Wrapper>
-      {
-        //Iterate the first links before the the horizontal break
-        //I used a default color props to make changing the link/text color of an active link easier
-        topLinks.map((navLink, index) => (
+    <Container>
+      <SidebarWrapper>
+        {
+          //Iterate the first links before the the horizontal break
+          //I used a default color props to make changing the link/text color of an active link easier
+          topLinks.map((navLink, index) => (
+            <SidebarLink
+              iconSrc={navLink.iconSrc}
+              text={navLink.text}
+              defaultColor={navLink.defaultColor}
+              key={index}
+            />
+          ))
+        }
+        <HorizontalLine />
+        {middleLinks.map((navLink, index) => (
           <SidebarLink
             iconSrc={navLink.iconSrc}
             text={navLink.text}
             defaultColor={navLink.defaultColor}
             key={index}
           />
-        ))
-      }
-      <HorizontalLine />
-      {middleLinks.map((navLink, index) => (
-        <SidebarLink
-          iconSrc={navLink.iconSrc}
-          text={navLink.text}
-          defaultColor={navLink.defaultColor}
-          key={index}
+        ))}
+
+        {/* The SubHeading */}
+        <CategorySubHeading
+          iconSrc={PlaylistIcon}
+          rightIcon={SearchIcon}
+          text="My Playlists"
         />
-      ))}
+        <HorizontalLine />
 
-      {/* The SubHeading */}
-      <CategorySubHeading
-        iconSrc={PlaylistIcon}
-        rightIcon={SearchIcon}
-        text="My Playlists"
-      />
-      <HorizontalLine />
-
-      {
-        // This will loop over the array of sub-categories twice
-        [1, 2].map((item) =>
-          subCategories.map((text, index) => (
-            <SubCategory text={text} key={index} />
-          ))
-        )
-      }
-    </Wrapper>
+        {
+          // This will loop over the array of sub-categories twice
+          [1, 2].map((item) =>
+            subCategories.map((text, index) => (
+              <SubCategory text={text} key={index} />
+            ))
+          )
+        }
+      </SidebarWrapper>
+    </Container>
   );
 };
 

@@ -5,21 +5,22 @@ import ProfilePicture from "../../assets/images/profile.png";
 const ProfileNavigator = styled.div`
   display: flex;
   align-items: center;
-  width: 295px;
+  width: 285px;
+  flex-shrink: 1;
   height: 100%;
-  background-color: #0f0f0f;
+  background-color: ${(props) => props.theme.color.secondaryBG};
 `;
 
 const ProfileImage = styled.img`
-  width: 62px;
-  height: 62px;
+  width: 52px;
+  height: 52px;
   margin-right: 20px;
   margin-left: 25px;
 `;
 
 const ProfileText = styled.p`
-  font-family: "Bw Modelica";
-  color: #d9d9d9;
+  font-family: ${(props) => props.theme.font.primary};
+  color: ${(props) => props.theme.color.textColor};
   font-size: 1em;
 `;
 

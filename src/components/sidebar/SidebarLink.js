@@ -5,10 +5,11 @@ import styled from "styled-components";
 import Speaker from "../../assets/icons/speaker_icon.svg";
 
 const Link = styled.p`
-  font-family: "Bw Modelica";
-  font-size: 1.1rem;
+  font-family: ${(props) => props.theme.font.primary};
+  font-size: 0.9rem;
   font-weight: 500;
-  color: ${(props) => (props.defaultColor ? "#d9d9d9" : "#FBBA12")};
+  color: ${(props) =>
+    props.defaultColor ? props.theme.color.textColor : "#FBBA12"};
   display: inline-block;
   margin: 10px 10px 15px 10px;
 `;

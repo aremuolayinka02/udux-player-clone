@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Text = styled.p`
-  color: #d9d9d9;
-  font-size: 0.9rem;
+  color: ${(props) => props.theme.color.textColor};
+  font-size: 0.8rem;
   font-family: "Bw Modelica";
-  margin: 8px 10px 8px 30px;
+  margin: 10px 10px 10px 30px;
 `;
 
 export const SubCategory = ({ text }) => {

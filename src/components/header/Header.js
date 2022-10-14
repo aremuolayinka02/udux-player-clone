@@ -5,8 +5,11 @@ import SearchNav from "./SearchNav";
 
 const HeaderWrapper = styled.div`
   display: flex;
-  height: 97px;
-  background-color: #000000;
+  position: fixed;
+  background-color: ${(props) => props.theme.color.background};
+  width: 100%;
+  height: 87px;
+  z-index: 10;
 `;
 
 export const Header = () => {
