@@ -32,6 +32,10 @@ const Container = styled.div`
   scrollbar-width: thin;
   scrollbar-color: #fbba12 #fbba12;
 
+  @media only screen and (${devices.mobile}) {
+    display: none;
+  }
+
   &::-webkit-scrollbar {
     width: 2px;
   }
@@ -44,10 +48,6 @@ const Container = styled.div`
     background-color: #fbba12;
     border-radius: 6px;
     border: 3px solid #fbba12;
-  }
-
-  @media only screen and (${devices.mobile}) {
-    display: none;
   }
 `;
 
