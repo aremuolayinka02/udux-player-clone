@@ -12,18 +12,16 @@ import Library from "../../assets/icons/your_library.svg";
 import PlaylistIcon from "../../assets/icons/playlists_icon.svg";
 
 const FooterWrapper = styled.div`
-  @media (${devices.mobile}) {
-    display: block;
-    height: 75px;
-    width: 100%;
-    position: fixed;
-    background-color: ${(props) => props.theme.color.background};
-    background-image: url(${FooterSVG});
-    bottom: 0;
-    z-index: 10;
-  }
+  display: block;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  background-color: ${(props) => props.theme.color.background};
+  background-image: url(${FooterSVG});
+  bottom: 0;
+  z-index: 10;
 
-  @media (${devices.desktop}) {
+  @media screen and (${devices.desktop}) {
     display: none;
   }
 `;
