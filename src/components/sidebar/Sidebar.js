@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import BackgroundSVG from "../../assets/icons/sidebar_bg.svg";
 import SidebarLink from "./SidebarLink";
 import CategorySubHeading from "./CategorySubHeading";
 import SubCategory from "./SubCategory";
@@ -9,6 +8,7 @@ import SubCategory from "./SubCategory";
 import { devices } from "../../utils/theme";
 
 //Imported Icons to be used on the Sidebar
+import BackgroundSVG from "../../assets/icons/sidebar_bg.svg";
 import Home from "../../assets/icons/home_icon.svg";
 import Discover from "../../assets/icons/discover_icon.svg";
 import Library from "../../assets/icons/your_library.svg";

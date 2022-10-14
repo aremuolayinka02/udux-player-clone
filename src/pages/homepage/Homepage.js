@@ -11,6 +11,10 @@ const HomepageWrapper = styled.div`
   background-color: ${(props) => props.theme.color.background};
   margin-top: 87px;
   width: 100%;
+
+  @media screen and (${devices.mobile}) {
+    margin-bottom: 74px;
+  }
 `;
 
 const Container = styled.div`

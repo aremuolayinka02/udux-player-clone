@@ -16,16 +16,15 @@ const Text = styled.h3`
   color: #ffffff;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  margin: 25px;
+  margin: 25px 0px 25px 0px;
 
-  @media screen and (${devices.mobile}) {
-    margin: 20px 0px;
-    font-size: 1.1rem;
+  @media screen and (${devices.mobileS}) {
+    font-size: 1rem;
   }
 `;
 
 const PlayListContainer = styled.div`
-  margin: 25px;
+  margin: 25px 0px 25px 0px;
   display: flex;
   padding-bottom: 10px;
   flex-direction: row;
@@ -33,12 +32,8 @@ const PlayListContainer = styled.div`
   scrollbar-width: thin;
   scrollbar-color: #fbba12 #fbba12;
 
-  @media screen and (${devices.mobile}) {
-    margin: 0;
-  }
-
   &::-webkit-scrollbar {
-    height: 1px;
+    height: 0px;
   }
 
   &::-webkit-scrollbar-track {

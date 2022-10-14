@@ -5,6 +5,7 @@ import Homepage from "./pages/homepage/Homepage";
 import GlobalFonts from "./utils/fonts";
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "./utils/theme";
+import Footer from "./components/footer/Footer";
 
 const AppWrapper = styled.div``;
 
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <Sidebar />
         <Homepage />
+        <Footer />
         <GlobalFonts />
       </ThemeProvider>
     </AppWrapper>
