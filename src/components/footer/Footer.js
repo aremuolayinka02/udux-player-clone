@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-//media query import
-import { devices } from "../../utils/theme";
-
 //svg imports
 import FooterSVG from "../../assets/icons/footer_bg.svg";
 import Home from "../../assets/icons/home_icon.svg";
