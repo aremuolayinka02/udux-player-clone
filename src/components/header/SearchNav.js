@@ -22,36 +22,60 @@ const Wrapper = styled.div`
 `;
 
 const DirectionArrows = styled.img`
-  width: 38px;
-  height: 31px;
-  margin-left: 10px;
-  cursor: pointer;
+  @media screen and (${devices.desktop}) {
+    width: 38px;
+    height: 31px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  @media screen and (${devices.mobile}) {
+    display: none;
+  }
 `;
 
 const SearchIcon = styled.img`
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  z-index: 10;
-  left: 10px;
-  top: 10px;
+  @media screen and (${devices.desktop}) {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+    left: 10px;
+    top: 10px;
+  }
+
+  @media screen and (${devices.mobile}) {
+    display: none;
+  }
 `;
 
 const SearchInput = styled.input`
-  max-width: 471px;
-  border: 1px solid #d9d9d9;
-  background-color: transparent;
-  font-family: "Bw Modelica";
-  color: #d9d9d9;
-  padding: 10px 40px 10px 40px;
-  font-size: 1rem;
+  @media screen and (${devices.desktop}) {
+    max-width: 471px;
+    border: 1px solid #d9d9d9;
+    background-color: transparent;
+    font-family: "Bw Modelica";
+    color: #d9d9d9;
+    padding: 10px 40px 10px 40px;
+    font-size: 1rem;
+  }
+
+  @media screen and (${devices.mobile}) {
+    display: none;
+  }
 `;
 
 const SearchContainer = styled.div`
-  position: relative;
-  margin: 0;
-  padding: 0;
-  margin-left: 15px;
+  @media screen and (${devices.desktop}) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+  }
+
+  @media screen and (${devices.mobile}) {
+    display: none;
+  }
 `;
 
 export const SearchNav = () => {
