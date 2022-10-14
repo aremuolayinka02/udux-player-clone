@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   height: 100%;
   background-color: transparent;
 
-  @media only screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) and (${devices.mobileS}) {
     display: none;
   }
 `;
