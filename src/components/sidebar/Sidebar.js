@@ -33,7 +33,7 @@ const Container = styled.div`
   scrollbar-color: #fbba12 #fbba12;
 
   @media only screen and (${devices.mobile}) {
-    display: none;
+    background-color: red;
   }
 
   &::-webkit-scrollbar {
@@ -62,7 +62,8 @@ const SidebarWrapper = styled.div`
   padding-bottom: 150px;
 
   @media only screen and (${devices.mobile}) {
-    display: none;
+    // display: none;
+    background-color: red;
   }
 `;
 
