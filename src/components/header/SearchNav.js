@@ -8,13 +8,15 @@ import SearchSVG from "../../assets/icons/icon_search.svg";
 import { devices } from "../../utils/theme";
 
 const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  height: 100%;
-  background-color: transparent;
+  @media screen and (${devices.desktop}) {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+    background-color: transparent;
+  }
 
-  @media only screen and (${devices.mobile}) {
+  @media screen and (${devices.mobile}) {
     display: none;
   }
 `;
@@ -24,10 +26,6 @@ const DirectionArrows = styled.img`
   height: 31px;
   margin-left: 10px;
   cursor: pointer;
-
-  @media only screen and (${devices.mobile}) {
-    display: none;
-  }
 `;
 
 const SearchIcon = styled.img`
@@ -37,10 +35,6 @@ const SearchIcon = styled.img`
   z-index: 10;
   left: 10px;
   top: 10px;
-
-  @media screen and (${devices.mobile}) {
-    display: none;
-  }
 `;
 
 const SearchInput = styled.input`
@@ -51,10 +45,6 @@ const SearchInput = styled.input`
   color: #d9d9d9;
   padding: 10px 40px 10px 40px;
   font-size: 1rem;
-
-  @media screen and (${devices.mobile}) {
-    display: none;
-  }
 `;
 
 const SearchContainer = styled.div`
@@ -62,10 +52,6 @@ const SearchContainer = styled.div`
   margin: 0;
   padding: 0;
   margin-left: 15px;
-
-  @media screen and (${devices.mobile}) {
-    display: none;
-  }
 `;
 
 export const SearchNav = () => {
