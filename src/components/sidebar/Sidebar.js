@@ -35,8 +35,7 @@ const Container = styled.div`
   @media screen and (${devices.mobile}) {
     background-color: red;
   }
-
-  &::-webkit-scrollbar {
+  > &::-webkit-scrollbar {
     width: 2px;
   }
 
