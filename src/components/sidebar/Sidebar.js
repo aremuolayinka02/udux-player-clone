@@ -18,6 +18,11 @@ import CreatePlaylist from "../../assets/icons/create_playlist_icon.svg";
 import PlaylistIcon from "../../assets/icons/playlists_icon.svg";
 import SearchIcon from "../../assets/icons/icon_search.svg";
 
+const HorizontalLine = styled.hr`
+  border: 0.1px solid #282828;
+  width: 220px;
+`;
+
 const Container = styled.div`
   display: inline-block;
   position: fixed;
@@ -41,7 +46,7 @@ const Container = styled.div`
     border: 3px solid #fbba12;
   }
 
-  @media screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) {
     display: none;
   }
 `;
@@ -56,14 +61,9 @@ const SidebarWrapper = styled.div`
   width: 285px;
   padding-bottom: 150px;
 
-  @media screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) {
     display: none;
   }
-`;
-
-const HorizontalLine = styled.hr`
-  border: 0.1px solid #282828;
-  width: 220px;
 `;
 
 export const Sidebar = () => {
