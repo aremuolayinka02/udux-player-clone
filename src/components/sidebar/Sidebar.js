@@ -32,7 +32,10 @@ const Container = styled.div`
   scrollbar-width: thin;
   scrollbar-color: #fbba12 #fbba12;
 
-  &::-webkit-scrollbar {
+  @media screen and (${devices.mobile}) {
+    background-color: red;
+  }
+  > &::-webkit-scrollbar {
     width: 2px;
   }
 
@@ -45,11 +48,6 @@ const Container = styled.div`
     border-radius: 6px;
     border: 3px solid #fbba12;
   }
-
-  @media screen and (${devices.mobile}) {
-    background-color: red;
-  }
-  > 
 `;
 
 const SidebarWrapper = styled.div`
