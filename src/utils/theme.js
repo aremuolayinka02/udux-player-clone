@@ -20,7 +20,7 @@ const sizes = {
 };
 
 export const devices = {
-  mobile: `(max-width: ${sizes.mobile}) and (min-device-width: ${sizes.mobile})`,
+  mobile: `(max-width: ${sizes.mobile}) and (max-device-width: ${sizes.mobile})`,
   mobileS: `(max-width: ${sizes.mobileS})`,
   desktop: `(min-width: ${sizes.desktop})`,
 };
