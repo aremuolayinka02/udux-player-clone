@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import SinglePlayListCard from "./playlist/SinglePlayListCard";
 
+//Import media query
+import { devices } from "../../utils/theme";
+
 //Playlist Image Imports
 import Playlist1 from "../../assets/icons/playlist_1.svg";
 import Playlist2 from "../../assets/icons/playlist_2.svg";
@@ -14,6 +17,11 @@ const Text = styled.h3`
   font-weight: 600;
   letter-spacing: 0.1rem;
   margin: 25px;
+
+  @media screen and (${devices.mobile}) {
+    margin: 20px 0px;
+    font-size: 1.1rem;
+  }
 `;
 
 const PlayListContainer = styled.div`
@@ -21,9 +29,13 @@ const PlayListContainer = styled.div`
   display: flex;
   padding-bottom: 10px;
   flex-direction: row;
-  overflow: scroll;
+  overflow-x: scroll;
   scrollbar-width: thin;
   scrollbar-color: #fbba12 #fbba12;
+
+  @media screen and (${devices.mobile}) {
+    margin: 0;
+  }
 
   &::-webkit-scrollbar {
     height: 1px;

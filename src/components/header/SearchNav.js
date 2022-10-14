@@ -4,12 +4,19 @@ import LeftArrow from "../../assets/icons/left_arrow.svg";
 import RightArrow from "../../assets/icons/right_arrow.svg";
 import SearchSVG from "../../assets/icons/icon_search.svg";
 
+//media query import
+import { devices } from "../../utils/theme";
+
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
   flex-grow: 1;
   height: 100%;
   background-color: transparent;
+
+  @media screen and (${devices.mobile}) {
+    display: none;
+  }
 `;
 
 const DirectionArrows = styled.img`

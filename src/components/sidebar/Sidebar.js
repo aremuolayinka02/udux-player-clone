@@ -5,6 +5,9 @@ import SidebarLink from "./SidebarLink";
 import CategorySubHeading from "./CategorySubHeading";
 import SubCategory from "./SubCategory";
 
+//Import media query
+import { devices } from "../../utils/theme";
+
 //Imported Icons to be used on the Sidebar
 import Home from "../../assets/icons/home_icon.svg";
 import Discover from "../../assets/icons/discover_icon.svg";
@@ -36,6 +39,10 @@ const Container = styled.div`
     background-color: #fbba12;
     border-radius: 6px;
     border: 3px solid #fbba12;
+  }
+
+  @media screen and (${devices.mobile}) {
+    display: none;
   }
 `;
 

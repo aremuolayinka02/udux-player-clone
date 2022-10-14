@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import ProfilePicture from "../../assets/images/profile.png";
 
+//media query import
+import { devices } from "../../utils/theme";
+
 const ProfileNavigator = styled.div`
   display: flex;
   align-items: center;
@@ -9,6 +12,10 @@ const ProfileNavigator = styled.div`
   flex-shrink: 1;
   height: 100%;
   background-color: ${(props) => props.theme.color.secondaryBG};
+
+  @media screen and (${devices.mobile}) {
+    width: 100%;
+  }
 `;
 
 const ProfileImage = styled.img`

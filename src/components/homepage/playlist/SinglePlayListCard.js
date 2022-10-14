@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const PlaylistCard = styled.div`
-  flex-basis: 190px;
-  min-width: 190px;
+  min-width: 10rem;
   min-height: 230px;
   border: 2px solid #707070;
   margin-right: 20px;
