@@ -11,16 +11,3 @@ export const theme = {
     primary: "Bw Modelica",
   },
 };
-
-//Media Queries - I am creating just two screen sizes because of the UI that was provided
-const sizes = {
-  mobileS: "768px",
-  mobile: "999px",
-  desktop: "1000px",
-};
-
-export const devices = {
-  mobile: `(max-width: ${sizes.mobile})`,
-  mobileS: `(max-width: ${sizes.mobileS})`,
-  desktop: `(min-width: ${sizes.desktop})`,
-};

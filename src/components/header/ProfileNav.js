@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import ProfilePicture from "../../assets/images/profile.png";
 
-//media query import
-import { devices } from "../../utils/theme";
-
 const ProfileImage = styled.img`
   width: 52px;
   height: 52px;

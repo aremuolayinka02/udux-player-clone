@@ -4,9 +4,6 @@ import SidebarLink from "./SidebarLink";
 import CategorySubHeading from "./CategorySubHeading";
 import SubCategory from "./SubCategory";
 
-//Import media query
-import { devices } from "../../utils/theme";
-
 //Imported Icons to be used on the Sidebar
 import BackgroundSVG from "../../assets/icons/sidebar_bg.svg";
 import Home from "../../assets/icons/home_icon.svg";

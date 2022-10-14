@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import SinglePlayListCard from "./playlist/SinglePlayListCard";
 
-//Import media query
-import { devices } from "../../utils/theme";
-
 //Playlist Image Imports
 import Playlist1 from "../../assets/icons/playlist_1.svg";
 import Playlist2 from "../../assets/icons/playlist_2.svg";
