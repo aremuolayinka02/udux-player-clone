@@ -32,7 +32,7 @@ const Container = styled.div`
   scrollbar-width: thin;
   scrollbar-color: #fbba12 #fbba12;
 
-  @media only screen and (${devices.mobile}) {
+  @media screen and (${devices.mobile}) {
     background-color: red;
   }
 
