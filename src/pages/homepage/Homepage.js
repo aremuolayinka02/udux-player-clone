@@ -12,7 +12,7 @@ const HomepageWrapper = styled.div`
   margin-top: 87px;
   width: 100%;
 
-  @media screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) {
     margin-bottom: 74px;
   }
 `;
@@ -25,7 +25,7 @@ const Container = styled.div`
   border: 1.5px solid ${(props) => props.theme.color.secondaryBG};
   padding: 7px 0px 7px 7px;
 
-  @media screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) {
     margin: 5px;
   }
 `;

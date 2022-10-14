@@ -13,7 +13,7 @@ const ProfileNavigator = styled.div`
   height: 100%;
   background-color: ${(props) => props.theme.color.secondaryBG};
 
-  @media screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) {
     width: 100%;
   }
 `;

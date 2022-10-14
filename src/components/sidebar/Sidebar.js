@@ -19,7 +19,7 @@ import PlaylistIcon from "../../assets/icons/playlists_icon.svg";
 import SearchIcon from "../../assets/icons/icon_search.svg";
 
 const Container = styled.div`
-  @media screen and (${devices.desktop}) {
+  @media only screen and (${devices.desktop}) {
     display: inline-block;
     position: fixed;
     margin-top: 87px;
@@ -43,7 +43,7 @@ const Container = styled.div`
     }
   }
 
-  @media screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) {
     display: none;
   }
 `;
@@ -58,7 +58,7 @@ const SidebarWrapper = styled.div`
   width: 285px;
   padding-bottom: 150px;
 
-  @media screen and (${devices.mobile}) {
+  @media only screen and (${devices.mobile}) {
     display: none;
   }
 `;

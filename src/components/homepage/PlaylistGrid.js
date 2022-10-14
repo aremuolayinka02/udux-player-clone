@@ -18,7 +18,7 @@ const Text = styled.h3`
   letter-spacing: 0.1rem;
   margin: 25px 0px 25px 0px;
 
-  @media screen and (${devices.mobileS}) {
+  @media only screen and (${devices.mobileS}) {
     font-size: 1rem;
   }
 `;
