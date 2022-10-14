@@ -18,7 +18,7 @@ const FooterWrapper = styled.div`
   bottom: 0;
   z-index: 10;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 `;
