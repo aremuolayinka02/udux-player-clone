@@ -19,28 +19,26 @@ import PlaylistIcon from "../../assets/icons/playlists_icon.svg";
 import SearchIcon from "../../assets/icons/icon_search.svg";
 
 const Container = styled.div`
-  @media only screen and (${devices.desktop}) {
-    display: inline-block;
-    position: fixed;
-    margin-top: 87px;
-    max-height: 100%;
-    overflow: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: #fbba12 #fbba12;
+  display: inline-block;
+  position: fixed;
+  margin-top: 87px;
+  max-height: 100%;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #fbba12 #fbba12;
 
-    &::-webkit-scrollbar {
-      width: 2px;
-    }
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
 
-    &::-webkit-scrollbar-track {
-      background: ${(props) => props.theme.color.background};
-    }
+  &::-webkit-scrollbar-track {
+    background: ${(props) => props.theme.color.background};
+  }
 
-    &::-webkit-scrollbar-thumb {
-      background-color: #fbba12;
-      border-radius: 6px;
-      border: 3px solid #fbba12;
-    }
+  &::-webkit-scrollbar-thumb {
+    background-color: #fbba12;
+    border-radius: 6px;
+    border: 3px solid #fbba12;
   }
 
   @media (${devices.mobile}) {
