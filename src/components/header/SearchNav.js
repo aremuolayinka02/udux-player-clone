@@ -8,14 +8,15 @@ import SearchSVG from "../../assets/icons/icon_search.svg";
 import { devices } from "../../utils/theme";
 
 const Wrapper = styled.div`
-  @media screen and (${devices.mobile}) {
-    display: none;
-  }
   display: flex;
   align-items: center;
   flex-grow: 1;
   height: 100%;
   background-color: transparent;
+
+  @media screen and (${devices.mobile}) {
+    display: none;
+  }
 `;
 
 const DirectionArrows = styled.img`
