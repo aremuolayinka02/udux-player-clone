@@ -32,10 +32,7 @@ const Container = styled.div`
   scrollbar-width: thin;
   scrollbar-color: #fbba12 #fbba12;
 
-  @media screen and (${devices.mobile}) {
-    background-color: red;
-  }
-  > &::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     width: 2px;
   }
 
@@ -48,6 +45,11 @@ const Container = styled.div`
     border-radius: 6px;
     border: 3px solid #fbba12;
   }
+
+  @media screen and (${devices.mobile}) {
+    background-color: red;
+  }
+  > 
 `;
 
 const SidebarWrapper = styled.div`
@@ -61,8 +63,7 @@ const SidebarWrapper = styled.div`
   padding-bottom: 150px;
 
   @media only screen and (${devices.mobile}) {
-    // display: none;
-    background-color: red;
+    display: none;
   }
 `;
 
