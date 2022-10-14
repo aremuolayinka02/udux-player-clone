@@ -21,7 +21,7 @@ const FooterWrapper = styled.div`
   bottom: 0;
   z-index: 10;
 
-  @media screen and (${devices.desktop}) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;

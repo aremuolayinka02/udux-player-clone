@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-//media query import
-import { devices } from "../../utils/theme";
-
 //Image imports
 import BannerImage from "../../assets/images/homepage_banner.png";
 import OmayLayImage from "../../assets/icons/omay_lay_icon.svg";
@@ -17,7 +14,7 @@ const BannerContainer = styled.div`
 const Banner = styled.img`
   width: 100%;
 
-  @media screen and (${devices.mobileS}) {
+  @media screen and (max-width: 768px) {
     height: 8rem;
   }
 `;
@@ -28,7 +25,7 @@ const OmayLay = styled.img`
   bottom: 20px;
   width: 14em;
 
-  @media screen and (${devices.mobileS}) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -39,7 +36,7 @@ const Udux = styled.img`
   top: 20px;
   width: 5em;
 
-  @media screen and (${devices.mobileS}) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;

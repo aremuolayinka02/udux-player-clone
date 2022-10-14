@@ -4,9 +4,6 @@ import LeftArrow from "../../assets/icons/left_arrow.svg";
 import RightArrow from "../../assets/icons/right_arrow.svg";
 import SearchSVG from "../../assets/icons/icon_search.svg";
 
-//media query import
-import { devices } from "../../utils/theme";
-
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -14,7 +11,7 @@ const Wrapper = styled.div`
   height: 100%;
   background-color: transparent;
 
-  @media only screen and (${devices.mobile}) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -25,7 +22,7 @@ const DirectionArrows = styled.img`
   margin-left: 10px;
   cursor: pointer;
 
-  @media only screen and (${devices.mobile}) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -38,7 +35,7 @@ const SearchIcon = styled.img`
   left: 10px;
   top: 10px;
 
-  @media only screen and (${devices.mobile}) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -52,7 +49,7 @@ const SearchInput = styled.input`
   padding: 10px 40px 10px 40px;
   font-size: 1rem;
 
-  @media only screen and (${devices.mobile}) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -63,7 +60,7 @@ const SearchContainer = styled.div`
   padding: 0;
   margin-left: 15px;
 
-  @media only screen and (${devices.mobile}) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;

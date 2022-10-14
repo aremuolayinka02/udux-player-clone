@@ -20,7 +20,7 @@ const ProfileNavigator = styled.div`
   height: 100%;
   background-color: ${(props) => props.theme.color.secondaryBG};
 
-  @media screen and (${devices.mobile}) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
@@ -30,7 +30,7 @@ const ProfileText = styled.p`
   color: ${(props) => props.theme.color.textColor};
   font-size: 1em;
 
-  @media screen and (${devices.mobile}) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
