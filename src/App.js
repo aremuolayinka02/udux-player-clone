@@ -3,15 +3,13 @@ import Header from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
 import Homepage from "./pages/homepage/Homepage";
 import GlobalFonts from "./utils/fonts";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { theme } from "./utils/theme";
 import Footer from "./components/footer/Footer";
 
-const AppWrapper = styled.div``;
-
 function App() {
   return (
-    <AppWrapper>
+    <div>
       <ThemeProvider theme={theme}>
         <Header />
         <Sidebar />
@@ -19,7 +17,7 @@ function App() {
         <Footer />
         <GlobalFonts />
       </ThemeProvider>
-    </AppWrapper>
+    </div>
   );
 }
 
